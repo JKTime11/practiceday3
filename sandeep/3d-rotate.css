@@ -4,6 +4,7 @@ div {
     margin-left: 100px;
     background-color: yellow;
     border: 1px solid red;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Shyok_river_Ladakh.jpg/250px-Shyok_river_Ladakh.jpg');
 }
 
 #myDiv1 {
