@@ -4,6 +4,8 @@ div {
     background-color: blue;
     position: relative; /*define position for box motion*/
     animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 3000ms;
 }
 @keyframes example {
     0% {
