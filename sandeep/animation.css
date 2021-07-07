@@ -6,6 +6,7 @@ div {
     animation-name: example;
     animation-duration: 4s;
     animation-delay: 3000ms;
+    animation-direction: reverse;
 }
 @keyframes example {
     0% {
