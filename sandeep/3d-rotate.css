@@ -1,0 +1,23 @@
+div {
+    width: 300px;
+    height: 100px;
+    margin-left: 100px;
+    background-color: yellow;
+    border: 1px solid red;
+}
+
+#myDiv1 {
+    transform: rotateX(20deg);
+    -ms-transform: rotateX(20deg);
+}
+
+#myDiv2 {
+    transform: rotateY(-20deg);
+    -ms-transform: rotateY(-20deg);
+}
+
+#myDiv3 {
+    transform: rotateZ(20deg);
+    -ms-transform: scaleZ(20deg);
+}
+
