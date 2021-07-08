@@ -1,20 +1,32 @@
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/enquire.css">
     </head>
 
     <body>
         <form>
-            Name <br>
-            <input type="text" name="name" placeholder="your name"><br><br>
-            Email <br>
-            <input type="email" name="email" placeholder="your email"><br><br>
-            Mobile  No. <br>
-            <input type="mobile" name="mobile" placeholder="your mobile number"><br><br>
-            Issue <br>
-            <textarea rows="10" cols="30" name="issue" placeholder="your enquiry"></textarea><br><br>
-            <input type="submit"> 
-            <input type="reset">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" name="name" placeholder="enter name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" name="email" placeholder="enter email address">
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile:</label>
+                <input type="number" class="form-control" name="mobile" placeholder="enter password">
+            </div>
+            <div class="form-group">
+                <label for="issue">Issue:</label><br>
+                <textarea rows="10" cols="30" name="issue" placeholder="your enquiry"></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-default">Submit</button>
+            <button type="reset" class="btn btn-default">Reset</button>
         </form>
     </body>
 
