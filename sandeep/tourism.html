@@ -7,9 +7,9 @@
         <div id="div1">
             <div id="div2">
                 <button>Hotels</button>
-                <button>Hospitals</button>
                 <button>Guides</button>
-                <button>Places</button>
+                <button onclick="visitPlaces()">Places</button>
+                <button onclick="enquire()">Enquiry</button>
             </div>
             <div id="div3">
                 <h3>Ladakh Tourism</h3>
@@ -22,4 +22,13 @@
             </div>
         </div>
     </body>
+	
+	<script>
+	    function visitPlaces() {
+		    document.location.href = "list.html";
+		}
+        function enquire() {
+		    document.location.href = "enquire.html";
+		}
+	</script>
 </html>
