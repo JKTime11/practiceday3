@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="enquire.css">
+    </head>
+
+    <body>
+        <form>
+            Name <br>
+            <input type="text" name="name" placeholder="your name"><br><br>
+            Email <br>
+            <input type="email" name="email" placeholder="your email"><br><br>
+            Mobile  No. <br>
+            <input type="mobile" name="mobile" placeholder="your mobile number"><br><br>
+            Issue <br>
+            <textarea rows="10" cols="30" name="issue" placeholder="your enquiry"></textarea><br><br>
+            <input type="submit"> 
+            <input type="reset">
+        </form>
+    </body>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name=['name', 'email', 'mobile', 'issue'];
+            let data=[];
+            name.forEach(function(item) {
+                data.push(document.querySelector(`[name=${item}]`).value);
+            });
+            console.log(data);
+        })
+    </script>
+</html>
