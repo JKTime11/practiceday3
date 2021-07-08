@@ -1,0 +1,75 @@
+html, body {
+    width: 100%;
+}
+
+#div1 {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+}
+
+#div2 {
+    width: 30%;
+}
+
+#div2 button {
+    display: block;
+    width: 40%;
+    margin: 10px auto;
+    padding: 5px;
+    color: white;
+    background-color: blue;
+    outline: none;
+}
+
+#div3 {
+    width: 70%;
+}
+
+#div3 h3 {
+    position: relative;
+    animation: ladakh 5s infinite;
+    animation-direction: alternate;
+}
+
+@keyframes ladakh {
+    0% {
+        left: 0%;
+        color: greenyellow;
+    }
+    25% {
+        left: 25%;
+        color: yellow;
+    }
+    50% {
+        left: 50%;
+        color: blue;
+    }
+    75% {
+        left: 75%;
+        color: cyan;
+    }
+    100% {
+        left: 100%;
+        color: red;
+    }
+}
+
+#div3 img {
+    width: 80%;
+    display: block;
+    margin: 10px auto;
+}
+
+#div3 p {
+    overflow: hidden;
+}
+
+#div3 a {
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
