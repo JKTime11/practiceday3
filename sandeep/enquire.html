@@ -28,6 +28,7 @@
             <button type="submit" class="btn btn-default">Submit</button>
             <button type="reset" class="btn btn-default">Reset</button>
         </form>
+        <p id="result"></p>
     </body>
 
     <script>
@@ -36,8 +37,34 @@
             const name=['name', 'email', 'mobile', 'issue'];
             let data=[];
             name.forEach(function(item) {
-                data.push(document.querySelector(`[name=${item}]`).value);
+            	var val=document.querySelector(`[name=${item}]`).value;
+                data.push(val);
             });
+            let text, result=document.getElementById('result'), error=false;
+            if(data[0].length<2) {
+            	error=true;
+            	text='Invalid name';
+            	result.innerHTML+=text+'<br>';
+            }
+            if(!(data[1].includes('.') && data[0].includes('@'))) {
+            	error=true;
+            	text='Invalid Email';
+            	result.innerHTML+=text+'<br>';
+            }
+            if(isNaN(data[2]) || data[2].length!==10) {
+            	error=true;
+            	text='Invalid Mobile Number';
+            	result.innerHTML+=text+'<br>';
+            }
+            if(data[3].length<2) {
+            	error=true;
+            	text='Invalid Issue message';
+            	result.innerHTML+=text+'<br>';
+            }
+            if(!error) {
+            	text="Everything is OK!";
+            	result.innerHTML=text+'<br>'+data;
+            }
             console.log(data);
         })
     </script>
